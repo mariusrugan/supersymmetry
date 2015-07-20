@@ -1,3 +1,9 @@
+UPDATED Readme
+==============
+
+gulp-starter forked from 2.0 branch of http://greypants.github.io/gulp-starter/
+
+
 gulp-starter
 ============
 ## Revisions
