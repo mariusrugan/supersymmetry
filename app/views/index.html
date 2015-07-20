@@ -1,16 +1,15 @@
 {#
-  Swig Templating!
-  Docs: http://paularmstrong.github.io/swig/docs/
+Swig Templating!
+Docs: http://paularmstrong.github.io/swig/docs/
 #}
 
-{% extends 'layouts/application.html' %}
+{% extends 'layouts/app.html' %}
 
 {% block content %}
-  <img src="assets/images/gulp.png" alt="gulp.js">
-  {% include "shared/social-icons.html" %}
-  <button id="button">Load Async Module</button>
+<div id="app"></div>
 {% endblock %}
 
 {% block javascript %}
-<script src="assets/javascripts/page1.js"></script>
+<script src="../assets/js/vendor.js"></script>
+<script src="../assets/js/app.js"></script>
 {% endblock %}

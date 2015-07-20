@@ -5,9 +5,9 @@ var htmlConfig = require('../config/html');
 var iconFontConfig = require('../config/iconFont');
 
 gulp.task('clean', function (cb) {
-  del([
-    config.publicAssets,
-    htmlConfig.dest,
-    iconFontConfig.sassDest
-  ], cb);
+    del([
+        config.publicAssets,
+        htmlConfig.dest,
+        iconFontConfig.sassDest
+    ], cb);
 });
