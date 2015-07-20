@@ -3,6 +3,11 @@ UPDATED Readme
 
 gulp-starter forked from 2.0 branch of http://greypants.github.io/gulp-starter/
 
+#TODO#
+- Bring back CoffeeScript
+- Proper split between vendor and app
+- Finalize integrate React/Flux sample
+- Proper tests runner
 
 gulp-starter
 ============
