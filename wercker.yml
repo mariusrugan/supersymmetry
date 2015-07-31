@@ -3,7 +3,6 @@ box: node
 build:
   steps:
     - npm-install
-    - npm-test
     - script:
         name: echo nodejs information
         code: |
@@ -12,4 +11,9 @@ build:
 
 deploy:
     steps:
-        - wercker/openshift-deploy@0.0.14
+        - script:
+            name: openshift deploy
+            code: |
+              echo "Changing to .ssh" $(cd ~/.ssh)
+              echo "Current" $(pwd)
+              echo "Listing" $(ls)
