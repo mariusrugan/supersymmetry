@@ -6,6 +6,8 @@ gulp-starter forked from 2.0 branch of http://greypants.github.io/gulp-starter/
 ## Build status
 [![Build Status](https://travis-ci.org/MariusRugan/supersymmetry.svg?branch=master)](https://travis-ci.org/MariusRugan/supersymmetry)
 
+[![Dependencies](https://david-dm.org/MariusRugan/supersymmetry.svg)](https://david-dm.org/MariusRugan/supersymmetry)
+
 
 #TODO#
 - Bring back CoffeeScript
