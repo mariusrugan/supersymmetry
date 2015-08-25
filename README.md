@@ -9,6 +9,8 @@ https://github.com/survivejs/webpack_react/
 ## Build status
 [![Build Status](https://travis-ci.org/MariusRugan/supersymmetry.svg?branch=master)](https://travis-ci.org/MariusRugan/supersymmetry)
 
+[![Dependencies](https://david-dm.org/MariusRugan/supersymmetry.svg)](https://david-dm.org/MariusRugan/supersymmetry)
+
 
 #TODO#
 - Bring back CoffeeScript
