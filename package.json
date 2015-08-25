@@ -65,14 +65,21 @@
     "require-dir": "^0.1.0",
     "vinyl-source-stream": "~0.1.1",
     "webpack": "^1.8.4",
-
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^1.2.0",
 
     "flux": "^2.0.3",
     "keymirror": "~0.1.0",
     "object-assign": "^1.0.0",
-    "immutable": "^3.7.2"
+    "immutable": "^3.7.2",
+
+    "flowcheck": "^0.2.7",
+    "flowcheck-loader": "^1.0.0"
   },
+
   "devDependencies": {
+    "node-libs-browser": "^0.5.2",
+
     "jest-cli": "^0.4.0",
     "compression": "^1.4.1",
     "express": "^4.12.2",

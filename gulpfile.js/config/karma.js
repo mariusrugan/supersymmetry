@@ -5,10 +5,10 @@ var webpackConfig = require('./webpack')('test')
 module.exports = {
   frameworks: ['mocha', 'sinon-chai'],
   files: [
-    'app/assets/javascripts/**/__tests__/*'
+    'app/assets/js/**/__tests__/*.test.js'
   ],
   preprocessors: {
-    'app/assets/javascripts/**/__tests__/*': ['webpack']
+    'app/assets/js/**/__tests__/*': ['webpack']
   },
   webpack: webpackConfig,
   singleRun: process.env.TRAVIS_CI === 'true',

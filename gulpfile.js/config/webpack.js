@@ -19,12 +19,16 @@ module.exports = function (env) {
     var webpackConfig = {
         context: jsSrc,
 
+        devtool: "eval-source-map",
+
         plugins: [
             new CommonsChunkPlugin('vendor', 'vendor.js', Infinity),
             new webpack.DefinePlugin({
                 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
             }),
             new webpack.optimize.OccurenceOrderPlugin()
+            // require 'react/addons' when we require 'react'
+            //new webpack.NormalModuleReplacementPlugin(/^react$/, 'react/addons')
         ],
 
         resolve: {
@@ -34,8 +38,13 @@ module.exports = function (env) {
         module: {
             loaders: [
                 {
+                    test: /\.jsx$/,
+                    loaders: ['react-hot', 'babel?stage=1'],
+                    exclude: /node_modules/
+                },
+                {
                     test: /\.js$/,
-                    loaders: ['babel-loader?stage=1'],
+                    loaders: ['babel-loader?stage=1', 'flowcheck'],
                     exclude: /node_modules/
                 },
                 {
@@ -55,7 +64,7 @@ module.exports = function (env) {
     if (env !== 'test') {
         // Karma doesn't need entry points or output settings
         webpackConfig.entry = {
-            app: ['./app.js'],
+            app: ['./index.js'],
             vendor: ['./vendor.js']
         }
 

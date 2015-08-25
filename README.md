@@ -3,6 +3,9 @@ UPDATED Readme
 
 gulp-starter forked from 2.0 branch of http://greypants.github.io/gulp-starter/
 
+
+https://github.com/survivejs/webpack_react/
+
 ## Build status
 [![Build Status](https://travis-ci.org/MariusRugan/supersymmetry.svg?branch=master)](https://travis-ci.org/MariusRugan/supersymmetry)
 
